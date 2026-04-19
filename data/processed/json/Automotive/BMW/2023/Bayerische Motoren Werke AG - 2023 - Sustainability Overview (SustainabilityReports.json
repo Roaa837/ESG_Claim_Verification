@@ -1,0 +1,90 @@
+{
+  "filename": "Bayerische Motoren Werke AG - 2023 - Sustainability Overview (SustainabilityReports.com).pdf",
+  "source_path": "C:\\Users\\dina_\\Desktop\\esg_verification_draft\\data\\reports\\Automotive\\BMW\\2023\\Bayerische Motoren Werke AG - 2023 - Sustainability Overview (SustainabilityReports.com).pdf",
+  "company_id": "DE0005190003",
+  "company_name": "Bayerische Motoren Werke AG",
+  "year": 2023,
+  "report_type": "sustainability_report",
+  "framework": "unknown",
+  "total_pages": 10,
+  "pages_extracted": 10,
+  "pages_ocr": 0,
+  "pages_skipped": 0,
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "INTRODUCTIONBMWGROUPSUSTAINABILITYOVERVIEW -FY 2023 LEGALFRAMEWORKS, REPORTINGS German Commercial Code (HGB) (among other relevant legislation) German Stock Corporation Act (AktG) Taxonomy Regulation (Regulation (EU) 2020/852 on the Establishment of a Framework to Facilitate Sustainable Investment) Guidelines on Alternative Performance Measures issued by the European Securities and Markets Authority (ESMA) German Corporate Governance Code Global Reporting Initiative (GRI) Sustainability Accounting Standards Board (SASB) Task Force on Climate-related Financial Disclosures (TCFD) UNGlobal Compact Progress Report: see references in GRIContent IndexThisdocumentprovidesanoverviewonselectedinformationpubliclyavailableintheBMWGroupReport2023,StatementonCorpo BMWGroup Report [ LINK] Statement on Corporate Governance [ LINK] Key Aspects of BMWGroup Corporate Governance [ LINK] Stakeholder Engagement Policy [ LINK] BMWGroup Legal Compliance Code [ LINK] Group Code on Human Rights and Working Conditions [ LINK] Supplier Sustainability Policy [ LINK]Page 1",
+      "tables": [
+        "D\no\nw\nn\nl\no\na\nd\ne\nd\nf\nr\no\nm − −\nS − −\nu\ns t − −\na\ni −\nn\na − −\nb\ni −\nl\ni t − −\ny\nR −\ne\np −\no\nr −\nt\ns . −\nc\no\nm\n|\n2\n0\n2\n6\n-\n0\n3\n-\n1\n7\n1",
+        "6\n:\n4\n9\n:\n2\n3\nU\nT\nC",
+        "D\no\nw\nn\nl\no\na\nd\ne\nd\nf\nr\no\nm\nS\nu\ns\nt\na\ni\nn\na\nb\ni\nl\ni\nt\ny\nR\ne\np\no\nr\nt\ns\n.\nc\no\nm\n|\n2\n0\n2\n6\n-\n0\n3\n-\n1\n7\n1",
+        "6\n:\n4\n9\n:\n2\n3\nU\nT\nC"
+      ],
+      "is_ocr": false,
+      "char_count": 1076
+    },
+    {
+      "page_number": 2,
+      "text": "BMWGROUPSTRATEGICOBJECTIVESBY 2025BMWGROUPSTRATEGICOBJECTIVESBY 2030Share of women in management positions22%Share of all-electri",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 129
+    },
+    {
+      "page_number": 3,
+      "text": "ENVIRONMENTALINDICATORS (1/4)TopicSub-topic2023 FigureUnitAggregationCarbon Emissions and related IndicatorsCO2 Footprint (Scope 1,2,3)Total -absolute number307134,699,641t C",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 174
+    },
+    {
+      "page_number": 4,
+      "text": "ENVIRONMENTALINDICATORS (2/4)TopicSub-topic2023 FigureUnitAggregationEnergyEnergy Consumption –TotalTotal energy consumption3096,380,652MW",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 138
+    },
+    {
+      "page_number": 5,
+      "text": "ENVIRONMENTALINDICATORS (3/4)TopicSub-topic2023 FigureUnitAggregationElectrifyElectrification –vehicleShare of all-electric vehicles (BEV) in deliveries66",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 154
+    },
+    {
+      "page_number": 6,
+      "text": "ENVIRONMENTALINDICATORS (4/4)TopicSub-topic2023 FigureUnitAggregationMaterialsMaterials used –vehiclesSteel and iron31148.4% per vehicleMaterials",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 145
+    },
+    {
+      "page_number": 7,
+      "text": "Supplier Sustainability PolicyHuman Rights and Working ConditionsSuppliers called upon to adhere to UNGC and ILOHealth and SafetyExpects all suppliers to adhere to ISO 45001 or similar guidelinesResponsible Sourcing of Raw MaterialsStakeholder dialogue that facilit",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 265
+    },
+    {
+      "page_number": 8,
+      "text": "GOVERNANCEINDICATORS (1/2) TopicsSub-topicsGovernance, human Rights and DiversityAnnual Report GovernanceStructureBoard of Management27Supervisory Board30RemunerationOverview256R",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 178
+    },
+    {
+      "page_number": 9,
+      "text": "TopicsSub-topicsGovernance, Combatting Corruption, Product Safety & Data Protection, Human Rights and DiversityStakeholder Engagement Policy Stakeholder StrategyObjectives to include stakeholders’ perspectives1EngagementLevelsLevel and methodsto engage 2MonitoringMeasuring engagement value and output3Grou",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 306
+    },
+    {
+      "page_number": 10,
+      "text": "DISCLAIMERThis document contains forward-looking statements that reflect BMWGroup’s current views about future events. The words “anticipate”, “assume”, “believe”, “estimate”, “expect”, “intend",
+      "tables": [],
+      "is_ocr": false,
+      "char_count": 193
+    }
+  ]
+}
