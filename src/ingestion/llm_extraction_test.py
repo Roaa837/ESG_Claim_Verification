@@ -58,7 +58,7 @@ def call_llm(prompt_template, paragraph_text):
             "stream": False,
             "options": {
                 "temperature": 0.0,
-                "num_predict": 4096,    # larger output for multi-claim
+                "num_predict": 2048,    # larger output for multi-claim
             },
         },
         timeout=300,

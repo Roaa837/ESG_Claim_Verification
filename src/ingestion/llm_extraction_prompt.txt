@@ -4,7 +4,7 @@ A claim is any statement related to Environmental, Social, or Governance (ESG) t
 - target: a future goal with a specific year or timeframe (e.g., "we will reach net zero by 2050")
 - commitment: a stated intention or principle without a specific deadline (e.g., "we are committed to diversity")
 - achievement: a past or present accomplishment, possibly with quantified results (e.g., "we reduced emissions by 30% in 2023")
-- narrative: a description of an ongoing program, policy, or activity without a specific outcome stated (e.g., "we operate an anti-corruption training program")
+- narrative: a description of a SPECIFIC, NAMED ESG program, policy, or initiative the company runs (e.g., a named training program, a defined diversity initiative, a specific code of conduct). Generic descriptions of organizational structures, business processes, or how the company operates day-to-day are NOT claims and should be skipped.
 
 For each claim extracted, provide these 11 fields (use exact strings for categorical fields):
 
@@ -42,11 +42,12 @@ CRITICAL RULES:
 - For categorical fields (claim_type, scope, geography, framework_reference), use the exact strings listed above. Use "N/A" or "none" only as listed.
 - A vague aspiration without specific content (e.g., "we are committed to a sustainable future") is NOT a claim. Skip it.
 - A boilerplate disclaimer (e.g., "this report contains forward-looking statements") is NOT a claim. Skip it.
+- Descriptions of how the company manages internal processes, organizational structures, financial operations, or routine business functions are NOT ESG claims. Only extract claims that make a specific ESG-related promise, target, achievement, or describe a SPECIFIC named ESG program or initiative.
 - Output ONLY a valid JSON object. No explanations, no markdown.
 
 EXAMPLES:
 
-Paragraph: "Land Use• Recognizing existing or potential future recreational, traditional, cultural and other land uses occurring in proximity to exploration or development activities"
+Paragraph: "LVMH’s Executive Committee is made up of the Group’s operational and func-tional executives. Guided by the Board of Directors, the Executive Committeeestablishes strategic objectives and works with managers to achieve them,taking into account changes in the Group’s operating environment, responsi-bilities and commitments."
 Output: {"claims": []}
 
 Paragraph: "Climate Greenergy recognises the significant global challenge that climate change brings. We understand the role we play in reducing emissions and are committed to driving decarbonisation of transport. Environment (E) We are committed to: • Achieving net zero by 2050 (or sooner) • Carbon neutral operations by 2035 (50% reduction by 2030) • Avoiding 12mt CO2e by 2035 with our products (8mt by 2030)."
