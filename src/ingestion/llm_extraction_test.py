@@ -6,16 +6,18 @@ import requests
 import pandas as pd
 from pathlib import Path
 
-INPUT_PARQUET = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_paragraphs"
-PROMPT_FILE   = r"C:\Users\dell\ESG_Claim_Verification\src\ingestion\llm_extraction_prompt.txt"
-OUTPUT_FILE   = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_extraction_test_results"
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+INPUT_PARQUET = BASE_DIR / "data" / "processed" / "llm_paragraphs"
+PROMPT_FILE   = BASE_DIR / "src" / "ingestion" / "llm_extraction_prompt.txt"
+OUTPUT_FILE   = BASE_DIR / "data" / "processed" / "llm_extraction_test_results"
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1:8b"
 SEED = 99
 
 
-def pick_stratified_paragraphs(df, seed=42):
+def pick_stratified_paragraphs(df, seed=99):
     # for each company, pick 1 shorter (25-50th percentile) and 1 longer (75-90th percentile) paragraph
     random.seed(seed)
     picked = []
