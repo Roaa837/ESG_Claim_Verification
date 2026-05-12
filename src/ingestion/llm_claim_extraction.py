@@ -15,10 +15,10 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1:8b"
 
 # print progress every N paragraphs
-PROGRESS_EVERY = 1
+PROGRESS_EVERY = 25
 
-# smoke test: limit run to N paragraphs (set to None for full corpus)
-MAX_PARAGRAPHS = 5
+# test: limit run to N paragraphs (set to None for full corpus)
+MAX_PARAGRAPHS = None
 
 def call_llm(prompt_template, paragraph_text):
     # substitute paragraph into the prompt
@@ -134,7 +134,7 @@ def main():
     else:
         print(f"\nNo checkpoint found — starting fresh")
 
-    # smoke test: cap the total target to first MAX_PARAGRAPHS of the corpus
+    # test: cap the total target to first MAX_PARAGRAPHS of the corpus
     if MAX_PARAGRAPHS is not None:
         target_df = df.head(MAX_PARAGRAPHS)
         print(f"  SMOKE TEST: total target capped at {MAX_PARAGRAPHS} paragraphs")
