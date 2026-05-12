@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 INPUT_PARQUET = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_paragraphs"
 PROMPT_FILE   = r"C:\Users\dell\ESG_Claim_Verification\src\ingestion\llm_extraction_prompt.txt"
 OUTPUT_JSONL  = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_claim_extraction_result.jsonl"
-SUMMARY_FILE  = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_claim_extractionsummary.json"
+SUMMARY_FILE  = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_claim_extraction_summary.json"
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1:8b"
@@ -134,14 +134,14 @@ def main():
     else:
         print(f"\nNo checkpoint found — starting fresh")
 
-    # filter to paragraphs not yet processed
-    remaining = df[~df["block_id"].isin(processed_ids)].reset_index(drop=True)
-
-    # smoke test limiter
+    # smoke test: cap the total target to first MAX_PARAGRAPHS of the corpus
     if MAX_PARAGRAPHS is not None:
-        remaining = remaining.head(MAX_PARAGRAPHS)
-        print(f"  SMOKE TEST: limited to {MAX_PARAGRAPHS} paragraphs")
+        target_df = df.head(MAX_PARAGRAPHS)
+        print(f"  SMOKE TEST: total target capped at {MAX_PARAGRAPHS} paragraphs")
+    else:
+        target_df = df
 
+    remaining = target_df[~target_df["block_id"].isin(processed_ids)].reset_index(drop=True)
     print(f"  remaining to process: {len(remaining):,} paragraphs")
 
     if len(remaining) == 0:
