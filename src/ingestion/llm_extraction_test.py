@@ -6,9 +6,9 @@ import requests
 import pandas as pd
 from pathlib import Path
 
-INPUT_PARQUET = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_paragraphs"
-PROMPT_FILE   = r"C:\Users\dell\ESG_Claim_Verification\src\ingestion\llm_extraction_prompt.txt"
-OUTPUT_FILE   = r"C:\Users\dell\ESG_Claim_Verification\data\processed\llm_extraction_test_results"
+INPUT_PARQUET = r"C:\Users\dina_\Desktop\esg_verification_draft\data\processed\llm_paragraphs"
+PROMPT_FILE   = r"C:\Users\dina_\Desktop\esg_verification_draft\src\ingestion\llm_extraction_prompt.txt"
+OUTPUT_FILE   = r"C:\Users\dina_\Desktop\esg_verification_draft\data\processed\llm_extraction_test_results"
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.1:8b"
